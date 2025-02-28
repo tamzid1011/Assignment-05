@@ -1,0 +1,13 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.massage{
+    background-color:#3752FD20 ;
+    padding: 12px;
+    border-radius: 8px;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 20px;
+}
