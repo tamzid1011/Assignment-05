@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs Page</title>
+
+    <!-- Tailwind CSS CDN  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Link Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#F4F7FF]">
+
+    <!-- Blogs section header start  -->
+    <header>
+        <nav>
+            <section class="w-11/12 mx-auto flex justify-between bg-white mt-6 p-5 rounded-2xl items-center">
+                <div class="flex gap-3 items-center">
+                    <img src="./assets/logo.png" alt="Page Logo" class="w-9 h-9">
+                    <h1 class="text-3xl"> <span>Dev</span> <span class="font-semibold -ml-2">Board</span> </h1>
+                </div>
+                <div class="flex items-center gap-9">
+                    <div class="flex gap-2 bg-[#F4F7FF] p-4 rounded-3xl hidden">
+                        <div class="flex items-center"><img src="./assets/checkbox.png" alt="Checkbox" class="w-6 h-6">
+                        </div>
+                        <h2 id="increment_task" class="text-2xl font-semibold">23</h2>
+                    </div>
+                    <div class="flex hidden items-center bg-[#F4F7FF] p-3 rounded-full">
+                        <button class="cursor-pointer"><img src="./assets/theme-btn.png" alt="Theme Change"></button>
+                    </div>
+
+                    <div class="">
+                        <button id="back_home_btn"
+                            class="bg-[#3752FD] px-5 py-3 text-white text-lg font-medium rounded-xl cursor-pointer">Back
+                            to Desk</button>
+                    </div>
+
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto space-y-6">
+        <h2 class="text-center text-2xl font-semibold my-4">Blogs</h2>
+
+        <!-- Question 01 -->
+        <div class="bg-white rounded-xl">
+            <p class="p-4 font-medium text-lg border-b-2 border-[#3752FD20] border-dashed">Question-1: What are the
+                different ways to select an element in the DOM?</p>
+            <div class="p-4">
+                <p class="font-medium">There are 5 ways to select an element in the DOM =></p>
+                <div class="text-sm mt-3 ml-8 space-y-1">
+                    <p>1) Using getElementById().</p>
+                    <p>2) Using getElementsByClassName().</p>
+                    <p>3)Using getElementsByTagName().</p>
+                    <p>4) Using querySelector().</p>
+                    <p>5) Using querySelectorAll().</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 02 -->
+        <div class="bg-white rounded-xl">
+            <p class="p-4 font-medium text-lg border-b-2 border-[#3752FD20] border-dashed"> Question-2: What is the
+                difference between innerHTML, innerText, and textContent ?</p>
+            <div class="p-4 ">
+                <p class="font-medium"> Difference between innerHTML, innerText, and textContent =></p>
+                <div class="text-sm mt-3 ml-8 space-y-1">
+                    <p><span class="font-medium">innerHTML =></span> Set the HTML content inside an element , including
+                        tags, text and spacing . </p>
+                    <p><span class="font-medium">innerText =></span> Set the text inside an element, but ignore HTML
+                        tags and extra spaces . Its does not return hidden text , only return visible text .</p>
+                    <p><span class="font-medium">textContent =></span> Set the text content inside an element, including
+                        hidden text , but ignore HTML formatting.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 03 -->
+        <div class="bg-white rounded-xl">
+            <p class="p-4 font-medium text-lg border-b-2 border-[#3752FD20] border-dashed">Question-3: What is event
+                delegation in the DOM?</p>
+            <div class="p-4">
+                <p class="font-medium">Event delegation in the DOM =></p>
+                <div class="text-sm mt-3 ml-8 leading-6">
+                    <p class=""> Event delegation is a way to handle events by adding a listener to a parent element
+                        instead of <br> each child element . When a child triggers an event , the parent detects and
+                        manages it. <br>
+                        Simply put , the parent element controls its child elements events.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 04 -->
+        <div class="bg-white rounded-xl">
+            <p class="p-4 font-medium text-lg border-b-2 border-[#3752FD20] border-dashed">Question-4: What is event
+                bubbling in the DOM?</p>
+            <div class="p-4">
+                <p class="font-medium"> Event bubbling in the DOM =></p>
+                <div class="text-sm mt-3 ml-8 leading-6">
+                    <p>Event bubbling is called event propagation in the DOM. <br>
+                        When a child element triggers an event,it spreads from the parent element up to the root
+                        element.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 05 -->
+        <div class="bg-white rounded-xl mb-20">
+            <p class="p-4 font-medium text-lg border-b-2 border-[#3752FD20] border-dashed">Question-5: How do you
+                create, add, and remove elements using JavaScript?</p>
+            <div class="p-4">
+                <p class="font-medium"> Create, add, and remove elements using JavaScript =></p>
+                <div class="text-sm mt-3 ml-8 space-y-1">
+                    <p> <span class="font-medium">Creat element => </span>Using document.createElement().</p>
+                    <p><span class="font-medium">Add element => </span>Using parentElement.appendChild().</p>
+                    <p><span class="font-medium">Remove element</span> Using remove() & removeChild().</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./JSON/utilities.js"></script>
+    <script src="./JSON/blogs.js"></script>
+</body>
+
+</html>

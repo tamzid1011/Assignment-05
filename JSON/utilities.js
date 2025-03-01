@@ -13,9 +13,8 @@ function getDate() {
     day: 'numeric',
     year : 'numeric'
         })
-    return todayDate;
+    return todayDate.replace(',','');
 }
-
 
 function getTime() {
     return new Date().toLocaleTimeString();
@@ -26,3 +25,5 @@ function getTime() {
 function getById(id) {
     return document.getElementById(id);
 };
+
+

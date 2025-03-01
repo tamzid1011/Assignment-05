@@ -21,8 +21,3 @@ Required Question to Answer at Blog.html
 
 - Question-5: How do you create, add, and remove elements using JavaScript?
 
-
-
-Assignment Requiredments ==>
-
-- Live site Link => https://taskmeeter.netlify.app/
